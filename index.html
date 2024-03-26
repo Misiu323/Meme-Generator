@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator meme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="box-aside">
+          <div class="box-input">
+            <label for="text">Tekst </label>
+            <input id="text" type="text" />
+          </div>
+          <input type="color" />
+          <div class="box-input">
+            <label for=""> wielkość tekstu </label>
+            <input type="number" />
+          </div>
+          <select class="fonts">
+            <option value="Arial">Arial</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Gill Sans">Gill Sans</option>
+          </select>
+        </div>
+      </aside>
+      <section>
+        <header>
+          <h1>Generator memów</h1>
+        </header>
+        <div class="content_box">
+          <div class="box-text"></div>
+          <div class="box-file">
+            <input class="content_img" id="file" type="file" />
+            <label for="file">Obrazek</label>
+          </div>
+        </div>
+        <div class="dowload-box">
+          <div class="dowload">
+            <a href="#">Pobierz Mema</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
