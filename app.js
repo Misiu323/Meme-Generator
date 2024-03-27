@@ -1,6 +1,7 @@
 const img = document.querySelector("#file");
 const box = document.querySelector(".content_box");
 const box_file = document.querySelector(".box-file");
+const dow_img = document.querySelector(".getImg");
 
 img.addEventListener("change", (e) => {
   const ladowanie = new FileReader();
@@ -8,9 +9,11 @@ img.addEventListener("change", (e) => {
     const obraz = document.createElement("img");
     obraz.src = ladowanie.result;
     box.appendChild(obraz);
+    dow_img.href = ladowanie.result;
   });
   ladowanie.readAsDataURL(e.target.files[0]);
   box_file.style.display = "none";
+  console.log(ladowanie.result);
 });
 
 const box_text = document.querySelector(".box-text");

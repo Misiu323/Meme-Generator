@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(230, 230, 230);
+}
 main {
   display: flex;
   justify-content: space-around;
@@ -81,10 +84,19 @@ img {
 aside {
   height: 100vh;
   width: 400px;
-  background-color: rgb(189, 189, 189);
   display: flex;
   justify-content: center;
   place-items: center;
+  position: relative;
+}
+.background {
+  height: 100vh;
+  width: 400px;
+  background-color: rgb(189, 189, 189);
+  transform: skew(-20deg);
+  z-index: -1;
+  position: absolute;
+  left: -15px;
 }
 .box-aside {
   display: flex;
